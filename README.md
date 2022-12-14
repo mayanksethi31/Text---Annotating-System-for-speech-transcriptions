@@ -62,3 +62,5 @@ The above categories have been developed using the words mentioned in the code n
 
 Further, after evaluating the tagging with human-generated codes using the categories, we see that there is 70% agreement between the two approaches.
 Finally, the reliability score was evaluated using the Cohen Kappa score of 0.64 which suggests that there is relatively good agreement between the two techniques being used in the project.
+
+#Note: I had given speech transcripts as my dataset for this project, but due to data fetch and data source issues, I could access only 97 records and usign them, the topics generated were not very insightful, thus had to change my dataset for this project.
