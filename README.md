@@ -13,19 +13,19 @@ So, to generate categories from the content mentioned, the project proposes a to
 # Project Concepts
 These were the concepts covered in this project(I enjoyed learning further)
 
-# 1. Grounded Coding:
+1. Grounded Coding:
 The concept of grounded coding to analyze surveys, interviews, and text more qualitatively has been the key concept for which the system of text annotation has been developed. The whole idea of the project is to develop a better coding system for texts and evaluate its reliability.
 
-# 2. Word Embeddings, Bag of Words, and Tf-IDF: 
+2. Word Embeddings, Bag of Words, and Tf-IDF: 
 These are techniques to represent text words in terms of vectors for the document. These are usually used for representing the document in terms of vectors and doing analysis over the same. TF-IDF on the other hand gives a weighing approach to words which might be more important for making better judgments about the content in the text document by evaluating the frequency of the words and their frequency in the whole document. These approaches are very much useful for understanding the semantics of a document and understanding the similarity between two distinct documents.
 
-# 3. Stemming and Lemmatization: 
+3. Stemming and Lemmatization: 
 This is a technique to standardize different forms of the words giving the same sense of meaning for further content and text analysis. While doing the preprocessing, I included a stemmer and lemmatizer to convert different forms of the words to the same before generating the vector representation of the same set of texts.
 
-# 4. Topic Model:  
+4. Topic Model:  
 These are probabilistic methods of extracting themes and the model used in the project is LDA, fully written as Latent Dirichlet Allocation. There are other methods also of assigning topics to texts like LSA, and CTM. It is an unsupervised method of assigning topics/themes to documents which are evaluated using the word vectors and running probability evaluation on the set of documents.
 
-# 5. Inter annotator Agreement: 
+5. Inter annotator Agreement: 
 This is a calculation procedure to evaluate whether a coding technique under use is reliable enough to develop and tag categories of texts which make sense to us reliably and do not cause confusion at the same time. After generating the categories through LDA, I have benchmarked this technique by evaluating this report and calculating the Kappa score to quantify the reliability against the coding done manually over a set of 30 documents selected equally from the 6 topics from the model.
 
 # Implementation:
@@ -40,7 +40,7 @@ This is a calculation procedure to evaluate whether a coding technique under use
 8. For the current pipeline, I have kept Bag of Words as the underlying technique for embeddings, and using the same, the model of LDA, which is an unsupervised learning method based on the probabilities of the words in the texts has been run over the dataset of 2700 text documents of editorials.  topics. 
 9. Using the same set of codes, I have done grounded coding on a set of 30 documents as attached in the excel file to produce the Inter Annotator Agreement Evaluation report to benchmark whether the system is good enough over human-driven evaluation systems using the Kappa score.
 
-# Instructions to run the project
+Instructions to run the project
 
 1. After loading the main code file, we import the relevant packages as mentioned in the notebook in the initial part.  
 2. We load the brown university data on editorials as selected in the brown corpus of the NLTK package. 
